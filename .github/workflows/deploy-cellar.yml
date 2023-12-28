@@ -1,0 +1,32 @@
+name: Deploy to Cellar
+
+on:
+  push:
+    branches: [ "main" ]
+    paths: 'src/**'
+  pull_request:
+    branches: [ "main" ]
+    paths: 'src/**'
+  workflow_dispatch:
+
+env:
+  HOST: https://cellar-c2.services.clever-cloud.com
+  BUCKET: davlgd
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Install MinIO Client
+      run: |
+        curl -s https://dl.min.io/client/mc/release/linux-amd64/mc -o /usr/local/bin/mc
+        chmod +x /usr/local/bin/mc
+    
+    - name: Configure MinIO Cient
+      run: mc alias set $BUCKET $HOST  ${{ secrets.ACCESS_KEY }} ${{ secrets.SECRET_KEY }}
+
+    - name: Deploy static content on Cellar
+      run: ./deploy.sh
