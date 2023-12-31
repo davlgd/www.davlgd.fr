@@ -29,4 +29,4 @@ jobs:
       run: mc alias set $BUCKET $HOST  ${{ secrets.ACCESS_KEY }} ${{ secrets.SECRET_KEY }}
 
     - name: Deploy static content on Cellar
-      run: ./deploy.sh
+      run: ./scripts/deploy.sh
