@@ -28,5 +28,8 @@ jobs:
     - name: Configure MinIO Cient
       run: mc alias set $BUCKET $HOST  ${{ secrets.ACCESS_KEY }} ${{ secrets.SECRET_KEY }}
 
+    - name: Build sitemap
+      run: ./scripts/sitemap.sh
+      
     - name: Deploy static content on Cellar
       run: ./scripts/deploy.sh
