@@ -1,0 +1,7 @@
+# Blog de David Legrand (davlgd) Blog
+
+> Blog personnel de David Legrand, VP Products @ Clever Cloud. Passionné de nouvelles technologies, de partage et de systèmes distribués depuis 1982.
+
+## Billets de blog
+
+- [2025](https://www.davlgd.fr/2025.html.md)
