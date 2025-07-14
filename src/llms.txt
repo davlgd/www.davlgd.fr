@@ -5,3 +5,4 @@
 ## Billets de blog
 
 - [2025](https://www.davlgd.fr/2025.html.md)
+- [Thierry](https://www.davlgd.fr/Thierry.html.md)
