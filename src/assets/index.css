@@ -1,7 +1,5 @@
 /* davlgd.fr - Page d'accueil */
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
-
 :root {
     --color-bg: #09090b;
     --color-surface: #18181b;
@@ -31,11 +29,7 @@ html {
 
 body {
     font-family:
-        "Inter",
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        sans-serif;
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     background-color: var(--color-bg);
     color: var(--color-text);
     line-height: 1.5;
