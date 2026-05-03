@@ -1,40 +1,116 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" data-theme="dark">
     <head>
         <meta charset="UTF-8" />
         <title>David Legrand - davlgd.fr</title>
         <meta
             name="description"
-            content="VP Products chez Clever Cloud. Infrastructure, cloud, open source."
+            content="David Legrand, VP Products chez Clever Cloud. Infrastructure, cloud, open source."
         />
         <meta
             name="keywords"
-            content="David Legrand, davlgd, Clever Cloud, Cloud, Infrastructure, Open Source"
+            content="David Legrand, davlgd, Clever Cloud, Cloud, Infrastructure, Open Source, PaaS, DevOps"
         />
+        <meta name="author" content="David Legrand" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="twitter:card" content="summary" />
+        <meta name="robots" content="index, follow" />
+        <meta name="theme-color" content="#0a0e12" />
+        <link rel="canonical" href="https://www.davlgd.fr/" />
+
+        <!-- Open Graph -->
+        <meta property="og:url" content="https://www.davlgd.fr/" />
+        <meta property="og:locale" content="fr_FR" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="davlgd.fr" />
+        <meta property="og:title" content="David Legrand - davlgd.fr" />
+        <meta
+            property="og:description"
+            content="David Legrand, VP Products chez Clever Cloud. Infrastructure, cloud, open source."
+        />
+        <meta
+            property="og:image"
+            content="https://www.davlgd.fr/assets/images/davlgd.jpg"
+        />
+        <meta property="og:image:width" content="1916" />
+        <meta property="og:image:height" content="821" />
+        <meta property="og:image:alt" content="davlgd.fr" />
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@davlgd" />
+        <meta name="twitter:creator" content="@davlgd" />
         <meta name="twitter:title" content="David Legrand - davlgd.fr" />
         <meta
             name="twitter:description"
-            content="VP Products chez Clever Cloud. Infrastructure, cloud, open source."
+            content="David Legrand, VP Products chez Clever Cloud. Infrastructure, cloud, open source."
         />
-        <meta name="og:url" content="https://www.davlgd.fr/" />
-        <meta name="og:locale" content="fr_FR" />
-        <meta name="og:type" content="website" />
-        <meta name="og:title" content="David Legrand - davlgd.fr" />
         <meta
-            name="og:description"
-            content="VP Products chez Clever Cloud. Infrastructure, cloud, open source."
+            name="twitter:image"
+            content="https://www.davlgd.fr/assets/images/davlgd.jpg"
         />
-        <link rel="stylesheet" href="assets/fontawesome-free/css/all.min.css" />
-        <link rel="stylesheet" href="assets/index.css" />
+
+        <!-- JSON-LD Schema -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "David Legrand",
+                "alternateName": "davlgd",
+                "url": "https://www.davlgd.fr",
+                "image": "https://www.davlgd.fr/assets/images/davlgd.jpg",
+                "jobTitle": "VP Products",
+                "worksFor": {
+                    "@type": "Organization",
+                    "name": "Clever Cloud",
+                    "url": "https://www.clever.cloud"
+                },
+                "sameAs": [
+                    "https://github.com/davlgd",
+                    "https://www.linkedin.com/in/davlgd/",
+                    "https://x.com/davlgd",
+                    "https://bsky.app/profile/davlgd.fr"
+                ]
+            }
+        </script>
+
+        <link rel="stylesheet" href="assets/fonts/fonts.css" />
+        <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
+        <link rel="stylesheet" href="assets/style.css" />
+        <script>
+            (function () {
+                try {
+                    var t = localStorage.getItem("theme") || "dark";
+                    document.documentElement.setAttribute("data-theme", t);
+                } catch (e) {}
+            })();
+        </script>
     </head>
 
     <body>
+        <header class="topbar">
+            <a class="brand" href="/">
+                <span class="glyph">d</span>
+                <span>davlgd</span>
+                <span class="path">
+                    <span class="sep">~/</span>home
+                </span>
+                <span class="cursor"></span>
+            </a>
+            <button
+                class="theme-toggle"
+                type="button"
+                aria-label="Toggle theme"
+            >
+                ☀
+            </button>
+        </header>
+
         <div class="page">
             <header class="header">
-                <h1 class="site-title">David Legrand</h1>
+                <div class="greet">$ whoami</div>
+                <h1 class="site-title">
+                    David <span class="glow">Legrand</span>
+                </h1>
                 <p class="site-tagline">
                     VP Products @
                     <a
@@ -119,9 +195,9 @@
             </nav>
 
             <section class="posts">
-                <h2 class="section-title">Billets</h2>
+                <h2 class="section-title">ls billets/</h2>
                 <ul class="posts-list">
-                    <li class="post-item">
+                                        <li class="post-item">
                         <a href="2026.html" class="post-link">
                             <span class="post-title">2026</span>
                             <span class="post-date">1 janvier 2026</span>
@@ -202,5 +278,30 @@
                 </ul>
             </section>
         </div>
+
+        <script>
+            (function () {
+                var btn = document.querySelector(".theme-toggle");
+                if (!btn) return;
+                var apply = function (t) {
+                    document.documentElement.setAttribute("data-theme", t);
+                    btn.textContent = t === "light" ? "☾" : "☀";
+                };
+                apply(
+                    document.documentElement.getAttribute("data-theme") ||
+                        "dark"
+                );
+                btn.addEventListener("click", function () {
+                    var cur =
+                        document.documentElement.getAttribute("data-theme") ||
+                        "dark";
+                    var nxt = cur === "light" ? "dark" : "light";
+                    apply(nxt);
+                    try {
+                        localStorage.setItem("theme", nxt);
+                    } catch (e) {}
+                });
+            })();
+        </script>
     </body>
 </html>
