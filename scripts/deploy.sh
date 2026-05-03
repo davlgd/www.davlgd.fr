@@ -2,7 +2,7 @@
 
 DOMAIN="www.davlgd.fr"
 BUCKET="davlgd/${DOMAIN}"
-DEPLOY_COMMAND="mc cp -r src/ ${BUCKET}"
+DEPLOY_COMMAND="mc cp -r --exclude index.template.html src/ ${BUCKET}"
 DEPLOY_MESSAGE="Website content deployment on Cellar :"
 
 if ! command -v mc &> /dev/null; then
