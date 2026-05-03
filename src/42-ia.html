@@ -1,12 +1,13 @@
 <!doctype html>
-<html>
+<html lang="fr" data-theme="dark">
     <head>
         <title>42 ans : La réponse à tout ?</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="theme-color" content="#0a0e12">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="keywords" content="42, IA, Merci, Anniversaire" />
         <meta name="description" content="42, par l'IA" />
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@davlgd" />
         <meta name="twitter:title" content="42 ans : La réponse à tout ?" />
         <meta name="twitter:description" content="42, par l'IA" />
@@ -32,22 +33,29 @@
                     }
                 ]
             }
-        </script>
-        <link type="text/css" rel="stylesheet" href="assets/style.css" />
-        <link type="text/css" rel="stylesheet" href="assets/pilcrow.css" />
-        <link
-            type="text/css"
-            rel="stylesheet"
-            href="assets/hljs-github.min.css"
-        />
+        </script><meta property="og:image" content="https://www.davlgd.fr/assets/images/davlgd.jpg">
+    <meta property="og:image:width" content="1916">
+    <meta property="og:image:height" content="821">
+    <meta name="twitter:image" content="https://www.davlgd.fr/assets/images/davlgd.jpg">
+            <link rel="stylesheet" href="assets/fonts/fonts.css">
+        <link rel="stylesheet" href="assets/style.css">
+        <script>(function(){try{var t=localStorage.getItem("theme")||"dark";document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
     </head>
 
     <body>
-        <h1 id="42-ans--la-réponse-à-tout-">
-            <a class="header-link" href="#42-ans--la-réponse-à-tout-"></a>42 ans
-            : La réponse à tout ?
-        </h1>
-        <p>
+        <header class="topbar">
+            <a class="brand" href="index.html">
+                <span class="glyph">d</span>
+                <span>davlgd</span>
+                <span class="path"><span class="sep">~/</span>billets<span class="sep">/</span>42-ia.md</span>
+                <span class="cursor"></span>
+            </a>
+            <button class="theme-toggle" type="button" aria-label="Toggle theme">☀</button>
+        </header>
+        <main class="article">
+            <h1>42 ans : La réponse à tout ?</h1>
+                            
+                            <p>
             Aujourd&#39;hui marque un nouveau tour de soleil, et pas
             n&#39;importe lequel. 42 ans. Un chiffre qui résonne
             particulièrement pour tout geek qui se respecte. La réponse à la
@@ -131,5 +139,8 @@
             découvertes !
         </p>
         <p>(On dirait du Linked In, non ?)</p>
-    <footer class="blog-footer"><a href="index.html">← Retour à l'accueil</a></footer></body>
+        </main>
+        <footer class="blog-footer"><a href="index.html">Retour à l'accueil</a></footer>
+        <script>(function(){var b=document.querySelector(".theme-toggle");if(!b)return;var a=function(t){document.documentElement.setAttribute("data-theme",t);b.textContent=t==="light"?"☾":"☀";};a(document.documentElement.getAttribute("data-theme")||"dark");b.addEventListener("click",function(){var c=document.documentElement.getAttribute("data-theme")||"dark";var n=c==="light"?"dark":"light";a(n);try{localStorage.setItem("theme",n);}catch(e){}});})();</script>
+    </body>
 </html>
