@@ -1,19 +1,19 @@
-# Blog de David Legrand (davlgd) Blog
+# Blog de David Legrand (davlgd)
 
 > Blog personnel de David Legrand, VP Products @ Clever Cloud. Passionné de nouvelles technologies, de partage et de systèmes distribués depuis 1982.
 
 ## Billets de blog
 
-- [39](https://www.davlgd.fr/39.html.md)
-- [Une page se tourne](https://www.davlgd.fr/une-page-se-tourne.html.md)
-- [Une nouvelle aventure](https://www.davlgd.fr/une-nouvelle-aventure.html.md)
-- [40](https://www.davlgd.fr/40.html.md)
-- [2023](https://www.davlgd.fr/2023.html.md)
-- [On my way to 42](https://www.davlgd.fr/on-my-way-to-42.html.md)
-- [2024](https://www.davlgd.fr/2024.html.md)
-- [42-ia](https://www.davlgd.fr/42-ia.html.md)
-- [42](https://www.davlgd.fr/42.html.md)
-- [2025](https://www.davlgd.fr/2025.html.md)
-- [Thierry](https://www.davlgd.fr/Thierry.html.md)
-- [43](https://www.davlgd.fr/43.html.md)
 - [2026](https://www.davlgd.fr/2026.html.md)
+- [43](https://www.davlgd.fr/43.html.md)
+- [Thierry](https://www.davlgd.fr/Thierry.html.md)
+- [2025](https://www.davlgd.fr/2025.html.md)
+- [42](https://www.davlgd.fr/42.html.md)
+- [42 ans : La réponse à tout ?](https://www.davlgd.fr/42-ia.html.md)
+- [2024](https://www.davlgd.fr/2024.html.md)
+- [On my way to 42](https://www.davlgd.fr/on-my-way-to-42.html.md)
+- [2023](https://www.davlgd.fr/2023.html.md)
+- [40 ans, toujours vivant !](https://www.davlgd.fr/40.html.md)
+- [Une nouvelle aventure](https://www.davlgd.fr/une-nouvelle-aventure.html.md)
+- [Une page se tourne](https://www.davlgd.fr/une-page-se-tourne.html.md)
+- [Et s'il ne me restait qu'un an à vivre ?](https://www.davlgd.fr/39.html.md)
