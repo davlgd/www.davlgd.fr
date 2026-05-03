@@ -18,12 +18,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Install MinIO Client
         run: |
-          curl -s https://dl.min.io/client/mc/release/linux-amd64/mc -o /usr/local/bin/mc
-          chmod +x /usr/local/bin/mc
+          sudo curl -fsSL https://dl.min.io/client/mc/release/linux-amd64/mc -o /usr/local/bin/mc
+          sudo chmod +x /usr/local/bin/mc
 
       - name: Configure MinIO Cient
         run: mc alias set $BUCKET $HOST  ${{ secrets.ACCESS_KEY }} ${{ secrets.SECRET_KEY }}
