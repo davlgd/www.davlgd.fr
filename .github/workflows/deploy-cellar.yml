@@ -12,6 +12,8 @@ on:
 env:
   HOST: https://cellar-c2.services.clever-cloud.com
   BUCKET: davlgd
+  MC_VERSION: RELEASE.2025-08-13T08-35-41Z
+  MC_SHA256: 01f866e9c5f9b87c2b09116fa5d7c06695b106242d829a8bb32990c00312e891
 
 jobs:
   build:
@@ -22,8 +24,9 @@ jobs:
 
       - name: Install MinIO Client
         run: |
-          sudo curl -fsSL https://dl.min.io/client/mc/release/linux-amd64/mc -o /usr/local/bin/mc
-          sudo chmod +x /usr/local/bin/mc
+          curl -fsSL "https://github.com/minio/mc/releases/download/${MC_VERSION}/mc.linux-amd64.${MC_VERSION}" -o mc
+          echo "${MC_SHA256}  mc" | sha256sum -c -
+          sudo install -m 755 mc /usr/local/bin/mc
 
       - name: Configure MinIO Cient
         run: mc alias set $BUCKET $HOST  ${{ secrets.ACCESS_KEY }} ${{ secrets.SECRET_KEY }}
