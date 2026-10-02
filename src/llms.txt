@@ -4,6 +4,7 @@
 
 ## Billets de blog
 
+- [44](https://www.davlgd.fr/44.html.md)
 - [2026](https://www.davlgd.fr/2026.html.md)
 - [43](https://www.davlgd.fr/43.html.md)
 - [Thierry](https://www.davlgd.fr/Thierry.html.md)
